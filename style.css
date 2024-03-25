@@ -1,0 +1,533 @@
+/* Reset básico para remover margens e paddings padrão do navegador */
+* {
+  box-sizing: border-box; /* Inclui padding e border no cálculo de largura/altura */
+  font-family: "Roboto", sans-serif;
+  
+
+}
+
+html, body {
+  width: 100%; /* Garante que ocupe toda a largura da tela */
+  height: 100%; /* Correção para garantir que a altura mínima seja a da janela do navegador */
+  background-color: #FFFFFF; /* Cor de fundo */
+}
+  
+  header {
+    width: 100%; /* Estende o cabeçalho para a largura total da página */
+    height: 70px; /* Altura fixa do cabeçalho */
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    background-color: #7d3434;
+  }
+  
+  .logo, #countdown {
+    display: flex; /* Habilita flexbox para ambos, permitindo alinhamento interno */
+    align-items: center; /* Centraliza os itens verticalmente dentro de cada bloco */
+    padding: 0 10px; /* Espaçamento interno para logo e countdown */
+  }
+  
+  .logo {
+    color: #FFFFFF;
+    font-size: 10px; /* Tamanho de fonte para o logo */
+    font-family: "Inter Tight", sans-serif;
+    margin-right: 20px; /* Espaço entre o logo e a contagem regressiva */
+    
+  }
+  
+  #countdown {
+    display: flex;
+    justify-content: center; /* Centraliza os elementos da contagem regressiva horizontalmente */
+    
+  }
+  
+  #countdown > div {
+    background: #FFFFFF; /* Cor de fundo dos blocos de tempo */
+    color: #8B0000; /* Cor do texto para combinar com o fundo */
+    padding: 10px 20px; /* Espaçamento interno dos blocos de tempo */
+    border-radius: 5px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(107, 70, 70, 0.1); /* Sombra suave para os blocos */
+    font-weight: bold;
+    margin: 0 10px; /* Espaçamento entre os blocos de tempo */
+  }
+  
+  .numero, .texto {
+    display: flex;
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center; /* Centraliza os itens verticalmente */
+    justify-content: center; /* Centraliza os itens verticalmente */
+  }
+  
+  .numero {
+    font-size: 20px; /* Tamanho de fonte para os números */
+    font-family: "Montserrat", sans-serif;
+    font-weight: 900;
+  }
+  
+  .texto {
+    font-size: 10px; /* Tamanho de fonte para os textos */
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 400;
+  }
+  
+  .hero {
+    width: 100%; /* Ocupa toda a largura da tela */
+    height: 784px; /* Altura fixa do hero */
+    position: relative; /* Adicionado para posicionar o layout1 em relação ao hero */
+  }
+  
+  .layout1 {
+    display: flex; /* Torna o contêiner um contêiner flexível */
+    height: 640px; /* Certifique-se de incluir 'px' no final do valor de altura */
+    width: 100%;/* Defina a largura desejada para o layout1 */;
+    position: absolute; /* Mantém o layout1 fora do fluxo normal do documento */
+    top: 50%; /* Posiciona o topo do layout1 no meio do hero verticalmente */
+    left: 50%; /* Posiciona a borda esquerda do layout1 no meio do hero horizontalmente */
+    transform: translate(-50%, -50%); /* Ajusta o layout1 para trás pela metade de sua própria largura e altura, centralizando-o perfeitamente */
+    align-items: center;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    
+  }
+
+  .titulo-e-sub{
+    width: 560px;
+    height: 346px;
+    padding: 0px 10px;
+    
+  }
+  #titulo-hero{
+    font-size: 56px;
+  
+    margin-bottom: 10px; /*adiciona espaço entre ele e o subtitulo*/
+
+  }
+
+  #subtitulo{
+    font-size: 20px;
+    margin-bottom: 50px; /*adiciona espaço entre ele e o subtitulo*/
+  }
+
+  img {
+    width: 75%; /* 75% de 520px */
+    height: 75%; /* 75% de 600px */
+  }
+
+  #vaga1{
+    margin-top: 10%;
+    width: 80%;
+    height: 70px;
+    margin-left: 8% ;
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 25px; /* Tamanho do texto */
+    font-family: '', sans-serif; /* Fonte */
+    color: #ffffff; /* Cor do texto */
+    background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Gradiente de fundo */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave para hover */
+      }
+      
+      .botao-estilizado:hover {
+        background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Inverte as cores do gradiente */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior */
+        transform: translateY(-2px); /* Levanta o botão ligeiramente */
+      }
+    
+/*--------------------------------------------------------------------BENEFICIOS------------------------------------------------------------------------------------------------------------------*/
+.beneficios {
+  display: flex;
+  flex-direction: column; /* Organiza o título e os itens de benefícios em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: flex-start; /* Alinha os itens ao topo */
+  height: auto; /* A altura ajusta ao conteúdo */
+  width: 100%; /* Largura total */
+  height: 604px;
+
+  padding: 80px 0; /* Espaçamento no topo e na base */
+}
+
+#titulo-beneficios {
+  font-size: 40px; /* Tamanho da fonte do título */
+  margin-bottom: 80px; /* Espaço entre o título e os itens de benefícios */
+  text-align: center; /*centraliza o texto*/
+
+}
+
+.beneficios-itens .contêiner-centralizado {
+  display: flex; /* Usa Flexbox */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  flex-wrap: wrap; /* Permite ajuste de acordo com a largura do contêiner */
+  width: 100%; /* Garante que o contêiner ocupe toda a largura disponível */
+}
+
+.conteiner-beneficios-itens {
+  text-align: center; /* Centraliza o texto dentro de cada item */
+  flex: 0 1 auto; /* Flexibilidade para ajustar, com base no conteúdo */
+  margin: 0 10px; /* Espaçamento lateral entre os itens */
+  width: 314.67px;
+  height: 184px;
+}
+
+
+#titulo-beneficios-itens{
+
+  font-size: 30px;
+}
+
+#icone-beneficios{
+  width: 10%;
+  height: 20px;
+}
+
+#texto-beneficios-itens{
+
+  font-size: 15px;
+}
+
+
+#vaga2{
+  width: 30%;
+  height: 70px;
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 25px; /* Tamanho do texto */
+ /* Fonte */
+  color: white; /* Cor do texto */
+  background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Gradiente de fundo */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Transição suave para hover */
+    }
+    
+    .botao-estilizado:hover {
+      background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Inverte as cores do gradiente */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior */
+      transform: translateY(-2px); /* Levanta o botão ligeiramente */
+    }
+
+/*--------------------------------------------------------------HERO INVERTIDO---------------------------------------------------------------------------*/
+
+.hero-invertido {
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 640px; /* Altura fixa do hero */
+  position: relative; /* Adicionado para posicionar o layout1 em relação ao hero */
+  top: calc(50% - 300px)
+}
+
+.layout1-invertido {
+  display: flex;
+  height: 640px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  gap: 80px; /* Mantém o espaçamento consistente na seção invertida */
+}
+
+
+#titulo-hero-invertido{
+  font-size: 45px;
+
+  margin-bottom: 24px; /*adiciona espaço entre ele e o subtitulo*/
+
+  margin-top: -20%;
+}
+
+#subtitulo-invertido{
+  font-size: 18px;
+  margin-bottom: 24px; /*adiciona espaço entre ele e a lista*/
+
+}
+
+#imagem-principal-invertida{
+  width: 400x;/* largura desejada */
+  height: 600px; /* mantém a proporção original */
+  
+}
+
+
+
+#vaga1-invertido{
+  width: 80%;
+  height: 70px;
+  margin-left: 8% ;
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 25px; /* Tamanho do texto */
+ /* Fonte */
+  color: #ffffff; /* Cor do texto */
+  background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Gradiente de fundo */
+  border: none; /* Remove a borda padrão */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+  transition: all 0.3s ease; /* Transição suave para hover */
+    }
+    
+    .botao-estilizado:hover {
+      background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Inverte as cores do gradiente */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior */
+      transform: translateY(-2px); /* Levanta o botão ligeiramente */
+    }
+
+    .lista-beneficios{
+     /* Fonte */
+      color: #111111;
+      font-size: 18px;
+      margin-left: 20px;
+      margin-bottom: 28px;
+    }
+
+  
+/*------------------------------------------------------------------TESTEMUNHOS------------------------------------------------------------*/
+
+.container-testemunhos {
+  display: flex;
+  flex-direction: column; /* Organiza o título e os itens de benefícios em coluna */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: flex-start; /* Alinha os itens ao topo */
+  height: auto; /* A altura ajusta ao conteúdo */
+  width: 100%; /* Ocupa toda a largura da tela */
+  position: relative; /* Adicionado para posicionar o layout1 em relação ao hero */
+  top: calc(50% - 300px);
+  padding: 0px 350px;
+}
+
+.layout-testemunhos {
+  
+  width: 560px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px;
+  }
+
+#titulo-testemunhos {
+  font-size: 48px;
+}
+
+#subtitulo-testemunhos {
+  font-size: 16px;
+  text-align: center;
+}
+
+.container-proof {
+  margin: 80px 0;
+  display: flex;
+  justify-content: space-between; /* Garante que os elementos proof fiquem lado a lado */
+  flex-wrap: wrap; /* Permite quebrar a linha se não houver espaço suficiente */
+}
+
+.proof {
+  width: calc(33.33% - 20px); /* Define a largura de cada proof para ocupar 1/3 do container, com margens entre eles */
+  height: 286.89px;
+  margin-bottom: 20px;
+}
+
+.material-icons {
+  font-size: 17px;
+  margin-bottom: 24px;
+}
+
+#texto-testemunhos {
+  margin-bottom: 24px;
+}
+
+.img-pequena {
+  width: 56px;
+  height: 56px;
+  border-radius: 80%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.nome-empresa {
+  font-size: 16px;
+}
+
+#vaga3{
+  display: block; /* Faz o botão ser tratado como um bloco */
+  width: 30%;
+  height: 70px;
+  padding: 10px 20px;
+  font-size: 25px;
+  color: white;
+  background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin: 0 auto; /* Margens automáticas nas laterais para centralizar */
+  margin-top: 90px;
+
+  z-index: 10; /* Ajuste conforme necessário para garantir que o botão esteja no topo */
+
+}
+
+.botao-estilizado:hover {
+  background-image: linear-gradient(to right, #bb0b0b 0%, #914b4b 100%);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+  
+
+/*--------------------------------------------------------------------------------------planos-----------------------------------------------------------------------------------------*/
+.container-planos{
+  height: 700px;
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos se movam para a linha seguinte se não houver espaço suficiente */
+  justify-content: center; /* Centraliza os elementos horizontalmente */
+  gap: 20px; /* Espaço entre os elementos .layout-planos */
+  margin: 300px;
+
+}
+
+.titulo-subtitulo-planos{
+  width: 100%;
+  height: 1103;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza verticalmente */
+margin-top: -20%;
+  flex-wrap: wrap;
+
+
+}
+
+#titulo-planos{
+  font-family: "Inclusive Sans", sans-serif;
+  font-size: 48px;
+  margin-top: 15%;
+  
+}
+
+#subtitulo-planos{
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 300;
+  font-size: 19px;
+  margin-bottom: -10%;
+}
+
+.titulo-planos,
+.subtitulo-planos {
+  text-align: center;
+}
+
+
+.layout-planos{
+  height: 450px;
+  padding-top: 3%;
+  margin-top: 5%;
+  border-radius: 5%;
+  border: 1px solid black; /* 1px de espessura, estilo sólido, cor preta */
+  
+}
+
+.titulo-tipo-plano{
+  font-size: 13px;
+  font-family: "Inclusive Sans", sans-serif;
+
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza verticalmente */
+  flex-wrap: wrap;
+  
+}
+
+.preco{
+  font-size: 30px;
+  font-family: "Inclusive Sans", sans-serif;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza verticalmente */
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+
+}
+
+.itens-planos{
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-size: 19px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Centraliza verticalmente */
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin-bottom: 50px;
+  
+}
+
+.start{
+    display: block; /* Assegura que o botão seja tratado como um bloco */
+    margin-left: auto;
+    margin-right: auto;
+    width: 219px;
+    height: 59px;
+    font-size: 20px; /* Tamanho do texto */
+    
+    color: #ffffff; /* Cor do texto */
+    background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Gradiente de fundo */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: all 0.3s ease; /* Transição suave para hover */
+  }
+    
+    .botao-estilizado:hover {
+      background-image: linear-gradient(to right, #bb0b0b 0%, #c51212 100%); /* Inverte as cores do gradiente */
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Sombra maior */
+      transform: translateY(-2px); /* Levanta o botão ligeiramente */
+    }
+
+    /*---------------------------------------------------------------FOOTER----------------------------------------------------------------------------------------*/
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #f3f3f3; /* Cor de fundo do footer */
+      color: #333; /* Cor do texto */
+      width: 100%;
+      height: 20%;
+      margin: 0;
+    }
+    
+    footer hr {
+      margin-bottom: 20px; /* Espaçamento abaixo da linha */
+    }
+    
+    footer a {
+      color: #333; /* Cor dos links */
+      text-decoration: underline; /* Sublinha os links */
+    }
+    
+    footer a:hover {
+      color: #007bff; /* Cor dos links ao passar o mouse */
+    }
+    
+    .social-icons a {
+      margin: 0 10px; /* Espaçamento entre os ícones */
+      font-size: 24px; /* Tamanho dos ícones */
+    }
+    
+    /* Estilos para os ícones das redes sociais usando Font Awesome */
+    .fa-facebook { color: #3b5998; }
+    .fa-twitter { color: #1da1f2; }
+    .fa-instagram { color: #e1306c; }
+    
