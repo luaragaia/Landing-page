@@ -1,20 +1,23 @@
-/* Reset básico para remover margens e paddings padrão do navegador */
+
 * {
-  box-sizing: border-box; /* Inclui padding e border no cálculo de largura/altura */
+  box-sizing: border-box; 
   font-family: "Roboto", sans-serif;
-  
+  margin: 0;
+  padding: 0;
 
 }
 
 html, body {
-  width: 100%; /* Garante que ocupe toda a largura da tela */
-  height: 100%; /* Correção para garantir que a altura mínima seja a da janela do navegador */
-  background-color: #FFFFFF; /* Cor de fundo */
+  width: 100%; 
+  height: auto; 
+  background-color: #FFFFFF; 
+  margin: 0;
+  padding: 0;
 }
   
   header {
-    width: 100%; /* Estende o cabeçalho para a largura total da página */
-    height: 70px; /* Altura fixa do cabeçalho */
+    width: 100%;
+    height: 5rem; 
     display: flex;
     justify-content: center; /* Centraliza os itens horizontalmente */
     align-items: center; /* Centraliza os itens verticalmente */
@@ -24,12 +27,13 @@ html, body {
   .logo, #countdown {
     display: flex; /* Habilita flexbox para ambos, permitindo alinhamento interno */
     align-items: center; /* Centraliza os itens verticalmente dentro de cada bloco */
-    padding: 0 10px; /* Espaçamento interno para logo e countdown */
+    padding: 0 10px; 
+    margin: 2rem;
   }
   
   .logo {
     color: #FFFFFF;
-    font-size: 10px; /* Tamanho de fonte para o logo */
+    font-size: 1rem; /* Tamanho de fonte para o logo */
     font-family: "Inter Tight", sans-serif;
     margin-right: 20px; /* Espaço entre o logo e a contagem regressiva */
     
@@ -71,28 +75,30 @@ html, body {
   }
   
   .hero {
-    width: 100%; /* Ocupa toda a largura da tela */
-    height: 784px; /* Altura fixa do hero */
+    width: 90%; /* Ocupa toda a largura da tela */
+    height: auto; /* Altura fixa do hero */
     position: relative; /* Adicionado para posicionar o layout1 em relação ao hero */
+    margin: 3rem;
+    background-color: rgb(248, 171, 171);
   }
   
   .layout1 {
-    display: flex; /* Torna o contêiner um contêiner flexível */
-    height: 640px; /* Certifique-se de incluir 'px' no final do valor de altura */
-    width: 100%;/* Defina a largura desejada para o layout1 */;
-    position: absolute; /* Mantém o layout1 fora do fluxo normal do documento */
-    top: 50%; /* Posiciona o topo do layout1 no meio do hero verticalmente */
-    left: 50%; /* Posiciona a borda esquerda do layout1 no meio do hero horizontalmente */
-    transform: translate(-50%, -50%); /* Ajusta o layout1 para trás pela metade de sua própria largura e altura, centralizando-o perfeitamente */
+    height: auto; /* Certifique-se de incluir 'px' no final do valor de altura */
+    width: 100%;/* Defina a largura desejada para o layout1 */
+    margin-top: 5rem;
     align-items: center;
     justify-content: center; /* Centraliza os itens horizontalmente */
-    
+    display: flex;
+    grid-column: span 2;
+    display: flex;
+    justify-content: space-between;
   }
 
   .titulo-e-sub{
     width: 560px;
     height: 346px;
     padding: 0px 10px;
+    align-items: center;
     
   }
   #titulo-hero{

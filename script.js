@@ -1,4 +1,4 @@
-const dataEvento = new Date('2024-05-31T00:00:00');
+const dataEvento = new Date('2030-05-31T00:00:00');
 
 function atualizarContagemRegressiva() {
   const agora = new Date().getTime();
